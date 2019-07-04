@@ -1,465 +1,382 @@
 <!DOCTYPE html>
+  <!-- Theme by Srimouli Borusu-->
 <html lang="en">
-<head>
-  <!-- Theme Made By Srimouli Borusu -->
-  <title>Acumen EEE</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }
-  .jumbotron {
-      background-color: #000000;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #000000;
-      font-size: 50px;
-  }
-  .logo {
-      color: #000000;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #000000;
-  }
-  .carousel-indicators li {
-      border-color: #000000;
-  }
-  .carousel-indicators li.active {
-      background-color: #000000;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #000000;
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #000000;
-      background-color: #fff !important;
-      color: #000000;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #000000 !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #000000;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #000000;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #000000 !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #000000;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resume - Srimouli Borusu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Srimouli Borusu Resume</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">EEE</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#registrations">Registrations</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <h1>Acumen</h1>
-  <p>An Annual Technical Extravaganza of vasavi college of engineering</p>
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Internships">Internships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Extra-Curriculars">Extra-Curriculars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Hobbies">Hobbies</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </form>
-</div>
+    </nav>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>ACUMEN EEE</h2><br>
-      <h4>A National Level Technical Symposium</h4><br>
-      <p>Acumen EEE is an annual Technical Festival organized by Department of Electrical and Electronics, which aims to provide a platform for students across the country to assemble, interact, share and gain knowledge in various fields of science and technology. Through this Symposium, we seek to provide a platform for budding engineers and scientists from all over the country to display their skills in a plethora of events designed to exercise their minds and to further a spirit of technology.
+    <div class="container-fluid p-0">
 
-      Since its inception in 1996, Acumen has grown in strength and in numbers and is now considered to be amongst the biggest technical festivals in the city. One of the hallmarks of Acumen has always been the presence of notable luminaries gracing the Institute portals, delivering inspiring lectures, video conferencing and conducting interactive workshops for the benefit of the student community.
-.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>Mission:</strong>"To impart knowledge to electrical engineering students so that they have the skills to innovate, excel and lead in their professions with values for the benefit of the society."</h4><br>
-      <p><strong>VISION:</strong> "Excellence in quality education by keeping pace with rapidly changing technologies and to create man power of global standards in the field of Electrical and Electronics Engineering."</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="events" class="container-fluid text-center">
-  <h2>Our Events</h2>
-  <h4>We have lot in box!!!! Jus wait till we unlock it </h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>Paper Presentation</h4>
-      <p>..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>Poster Presentation</h4>
-      <p>..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>Bid Your Star</h4>
-      <p>..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>Interview</h4>
-      <p>....</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4> GET CERTIFIED</h4>
-      <p>..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">Officina</h4>
-      <p>..</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div id="registrations" class="container-fluid text-center bg-grey">
-  <h2>Wanna Register</h2><br>
-  <h4>Fill your details here</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="IMG_7025.JPG" alt="we" width="400" height="300">
-        <p><strong>...</strong></p>
-        <p>...</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="IMG-20160216-WA0000.jpg" alt="you" width="400" height="300">
-        <p><strong>....</strong></p>
-        <p>....</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="27846252_1194874293982324_1448792311_o.jpg" alt="ready" width="400" height="300">
-        <p><strong>...</strong></p>
-        <p>....</p>
-      </div>
-    </div>
-  </div><br>
-
-  <h2>What our Participants Say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"Acumen EEE  fest was spectacular,the events were really innovative and were the crowd.
-          I could seea great exchange of Ideas"<br><span>- AVNRao, Retd.Prof
-   NIT Warangal</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>Saahith, IITH</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this Fest?"<br><span>Dileep,student, IITH</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="sponsors" class="container-fluid">
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="theme ballet.png" alt="ready" width="400" height="300">
-      <p><strong>...</strong></p>
-      <p>....</p>
-    </div>
-  </div>
-
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Ibrahimbagh, Hyd</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91 9908480359</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> acumeneee2k18@gmail.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Naga Srimouli
+            <span class="text-primary">Borusu</span>
+          </h1>
+          <div class="subheading mb-5">H.no:35-6-195, Lane-4 Pragathi Nagar, 100ft Rd, Hanmakonda, Warangal - 506015
+            · 9908480359 ·
+            <a href="mailto:srimouli04@yahoo.co.in">srimouli04@yahoo.co.in</a>
+          </div>
+          <p class="mb-5">As a person I would describe myself as dynamic, competitive, bold, decisive and confident. I always strive to do my best in whatever tasks I take up or are assigned to me. I always have been a go-getter and till this point in my life I tried to grab every opportunity that came my way and in the process won several prizes both in academics as well as non-academic activities.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/srimouli04">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/srimouli/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/srimouli04">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Internships">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects/Internships</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Data Analytics with Managerial Applications</h3>
+              <div class="subheading mb-3">IIM Lucknow</div>
+              <p>Mentor:Dr. Sameer Mathur, Ass.Prof., IIM Lucknow</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June12- July 8 ,2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Marketing Management</h3>
+              <div class="subheading mb-3">IIM Lucknow</div>
+              <p>Mentor:Dr. Sameer Mathur, Ass.Prof., IIM Lucknow</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 25 - Aug 21, 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Study of Operation and Monitoring of 220KV Sub-Station </h3>
+              <div class="subheading mb-3">TSTRANSCO Warangal</div>
+              <p>Mentor:L. Rajender Rao, Ass. Div Engineer TSTRANSCO-WGL</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Dec 2 - Dec 13, 2016</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Automatic Query Responding system  (with IBM Watson and Facebook api’s using node.js) </h3>
+              <div class="subheading mb-3"></div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Dec 2017</span>
+            </div>
+          </div>
+
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Projects">
+            <div class="my-auto">
+              <h2 class="mb-5">Mandatory Academic Projects</h2>
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">Prototype of Stepper Motor</h3>
+                  <div class="subheading mb-3">Vasavi College of Engineering</div>
+                  <p>Mentor:Ch.V. S. S. Sailaja, Assoc. Prof, Vasavi College of Eng.</p>
+                </div>
+                <div class="resume-date text-md-right">
+                  <span class="text-primary">Aug-Oct, 2016</span>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">Prototype of Smart Bike</h3>
+                  <div class="subheading mb-3">Indian School of Business(ISB),Hyderabad</div>
+                  <p>Mentor:Mr. Ekanto Ghosh, TA, Indian School of Business,Hyderabad</p>
+                </div>
+                <div class="resume-date text-md-right">
+                  <span class="text-primary">June2017-May2018</span>
+                </div>
+              </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">DC Machine Automation</h3>
+                <div class="subheading mb-3">Vasavi College of Engineering</div>
+                <p>Mentor:Ch.V. S. S. Sailaja, Assoc. Prof, Vasavi College of Eng.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Jan 2018 - Apr 2018</span>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+      <section class="resume-section p-4 p-lg-8 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Vasavi College of Engineering, Hyderabad</h3>
+              <div class="subheading mb-3">Bachelor of Engineering</div>
+              <div>Electrical and ELctronics Engineering</div>
+              <p>CGPA: 8.27</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2014 - June 2018</span>
+            </div>
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Indian School of Business, Hyderabad</h3>
+              <div class="subheading mb-3">Technology Entrepreneurship Programme</div>
+              <p>Grade: A+</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2016 - June 2018</span>
+            </div>
+          </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Sri Chaitanya Junior College</h3>
+              <div class="subheading mb-3">Physics, Chemistry and Mathematics</div>
+              <p>Percentage: 95.50%</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2012- March 2014</span>
+            </div>
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">St.Gabriels High School</h3>
+         <div class="subheading mb-3">    10<sup>th</sup> Standard </div>
+              <p>GPA: 9.8</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2011 - June 2012</span>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Technical Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <li class="list-inline-item">
+                <i class="devicon-cplusplus-plain"></i>
+              </li>
+              <li class="list-inline-item">
+              <i class="devicon-c-plain"></i>
+              </li>
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-illustrator-plain"></i>
+              <i class="devicon-photoshop-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-r"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-python-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+                <img class="" src="img/R.png" alt="">
+                  <img class="" src="img/pega.png" alt="">
+            </li>
+          </ul>
+
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Pega 7.2 Certified Senior System Architect</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Selected among top 25 projects by ISB for a prototype and business plan of smart bike
+</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Won    1<sup>st</sup> prize at NIT Warangal in 2016, for presenting a paper on “Piezo Electric Energy Production and Harvesting on Ships”
+</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+
+              Won  2<sup>nd</sup> at IIT Hyderabad  in 2017, for presenting a paper on “Piezo Electric Energy Production and Harvesting on Ships”
+</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+
+              Won 3<sup>rd</sup> prize at NIT Warangal in 2015, for presenting a paper on “Wireless power transmission using solar powered satellites”
+</li>
+        <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Received  Merit certificate at IIIT Hyderabad in 2017  for presenting a paper on “Piezo Electric Energy Production and Harvesting on Ships”
+</li>
+<li>
+  <i class="fa-li fa fa-trophy text-warning"></i>
+  Received  Merit certificate at IIIT Hyderabad in 2016  for presenting a paper on “Wireless power transmission using solar powered satellites”
+</li>
+<li>
+  <i class="fa-li fa fa-trophy text-warning"></i>
+Best Outgoing Science Student & Best Outgoing Science and Maths Secretary at St. Gabriels H S, WGL for the year 2011-12
+</li>
+<li>
+  <li>
+    <i class="fa-li fa fa-trophy text-warning"></i>
+Received Guiness Book of World Records Certificate for Participating in Lakshagalrchana 2009
+  <i class=""></i>
+and many more awards in inside the college </li>
+<li>
+          </ul>
         </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+      </section>
+
     </div>
-  </div>
-</div>
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(17.38052°, 78.382692);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyWQsciSPbWLCW2spyjzmMFaH5v8XEAGI&callback=myMap"></script>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Extra-Curriculars">
+        <div class="my-auto">
+          <h2 class="mb-5">Extra Curriculars</h2>
+          <p>· Website and poster designer and Co-organiser of EEE for the technical fest ACUMEN from 2016.</p>
+          <p>· Editor-In- Chief of Electtrico Rivista (the departmental magazine of EEE) from 2016.</p>
+          <p>· Lead Coordinator and VFX designer of THEME BALLET (college dance troop).</p>
+          <p>· Campus Ambassador Technology Entrepreneurship Program , Indian School of Business, Gachibowli, Hyd.</p>
+          <p>· Participated in Game development workshop at NIT Warangal and High Voltage Direct Current transmission workshop at Vasavi  College of Engineering.</p>
+          <p>· Member of Swayam ( Entrepreneurship cell).</p>
+          </div>
+          </section>
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Copyright<a href="#" title="Acumen EEE">Dept. of Electrical and Electronics Engineering Vasavi College of Engineering</a></p>
-</footer>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    //  this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Hobbies">
+        <div class="my-auto">
+        <h2 class="mb-5">Hobbies</h2>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi,fantasy genre movies and television shows, I love cooking, playing badminton and I spend a large amount of my free time exploring the latest technolgy advancements and learning new skills.</p>
+      </div>
+    </section>
 
-      // Store hash
-      var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
-</body>
+  </body>
+
 </html>
